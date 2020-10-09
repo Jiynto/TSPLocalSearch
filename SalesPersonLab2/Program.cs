@@ -63,7 +63,7 @@ namespace SalesPersonLab1
             Route currentBest = graph.RandomRoute();
 
             sw.Start();
-            while (sw.ElapsedMilliseconds < 300000)
+            while (sw.ElapsedMilliseconds < 5000)
             {
                 Route newRoute = graph.RandomRoute();
                 if(graph.RouteCost(newRoute) < graph.RouteCost(currentBest))
@@ -86,15 +86,25 @@ namespace SalesPersonLab1
 
         public static Route BestNeighbour(Route currentBest, RouteGraph graph)
         {
-            List<Route> currentHood = graph.GetNeighbourhood(currentBest);
+            var sw = new Stopwatch();
+            sw.Start();
 
-            foreach(Route currentRoute in currentHood)
+
+            while (sw.ElapsedMilliseconds < 5000)
             {
-                if(graph.RouteCost(currentRoute) < graph.RouteCost(currentBest))
+                List<Route> currentHood = graph.GetNeighbourhood(currentBest);
+
+                foreach (Route currentRoute in currentHood)
                 {
-                    currentBest = currentRoute;
+                    if (graph.RouteCost(currentRoute) < graph.RouteCost(currentBest))
+                    {
+                        currentBest = currentRoute;
+                    }
                 }
             }
+            sw.Stop();
+
+           
 
             return currentBest;
 
@@ -137,6 +147,13 @@ namespace SalesPersonLab1
             routey.route.ForEach(i => Console.Write("{0}\t", i));
             Console.WriteLine();
             Console.WriteLine(graph.RouteCost(routey));
+
+            Route bestRoutey = BestNeighbour(routey, graph);
+
+            Console.WriteLine();
+            bestRoutey.route.ForEach(i => Console.Write("{0}\t", i));
+            Console.WriteLine();
+            Console.WriteLine(graph.RouteCost(bestRoutey));
 
 
         }

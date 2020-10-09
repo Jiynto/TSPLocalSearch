@@ -43,11 +43,11 @@ namespace SalesPersonLab1
                 {
                     if (adMat[i, j] == null)
                     {
-                        Console.Write("--");
+                        Console.Write("\t");
                     }
                     else
                     {
-                        Console.Write(adMat[i, j]);
+                        Console.Write(String.Format("{0:0.000\t}",adMat[i, j]));
                     }
 
                     if (j == adMat.GetLength(0) - 1)
@@ -97,13 +97,11 @@ namespace SalesPersonLab1
                     if(i != j)
                     {
                         Route newRoute = new Route(inputRoute.route.Count);
-                        List<double> tempRoute = inputRoute.route;
-                        double temp = tempRoute[i];
+                        List<int> tempRoute = new List<int>(inputRoute.route);
+                        int temp = tempRoute[i];
                         tempRoute[i] = tempRoute[j];
                         tempRoute[j] = temp;
-
                         newRoute.route = tempRoute;
-
                         if(!Neighbourhood.Contains(newRoute))
                         {
                             Neighbourhood.Add(newRoute);
@@ -125,10 +123,12 @@ namespace SalesPersonLab1
         {
             double cost = 0;
 
-            for (int i = 0; i < inputRoute.route.Count - 1; i++)
+            for (int i = 0; i < inputRoute.route.Count -1; i++)
             {
-                cost += (double)adMat[(int)inputRoute.route[i], (int)inputRoute.route[i + 1]];
+                cost += (double)adMat[inputRoute.route[i], inputRoute.route[i + 1]];
             }
+            cost += (double)adMat[inputRoute.route[inputRoute.route.Count - 1], inputRoute.route[0]];
+
             return cost;
         }
 

@@ -9,12 +9,12 @@ namespace SalesPersonLab1
     {
         private bool isFull = false;
         public bool IsFull { get { return isFull; } }
-        public List<double> route;
+        public List<int> route;
         private int length;
 
         public Route(int inputLength)
         {
-            route = new List<double>();
+            route = new List<int>();
             length = inputLength;
         }
 
