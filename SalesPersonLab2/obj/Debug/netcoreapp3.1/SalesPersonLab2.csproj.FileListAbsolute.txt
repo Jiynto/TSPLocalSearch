@@ -1,0 +1,14 @@
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\bin\Debug\netcoreapp3.1\SalesPersonLab2.exe
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\bin\Debug\netcoreapp3.1\SalesPersonLab2.deps.json
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\bin\Debug\netcoreapp3.1\SalesPersonLab2.runtimeconfig.json
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\bin\Debug\netcoreapp3.1\SalesPersonLab2.runtimeconfig.dev.json
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\bin\Debug\netcoreapp3.1\SalesPersonLab2.dll
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\bin\Debug\netcoreapp3.1\SalesPersonLab2.pdb
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\obj\Debug\netcoreapp3.1\SalesPersonLab2.csprojAssemblyReference.cache
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\obj\Debug\netcoreapp3.1\SalesPersonLab2.AssemblyInfoInputs.cache
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\obj\Debug\netcoreapp3.1\SalesPersonLab2.AssemblyInfo.cs
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\obj\Debug\netcoreapp3.1\SalesPersonLab2.csproj.CoreCompileInputs.cache
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\obj\Debug\netcoreapp3.1\SalesPersonLab2.dll
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\obj\Debug\netcoreapp3.1\SalesPersonLab2.pdb
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\obj\Debug\netcoreapp3.1\SalesPersonLab2.genruntimeconfig.cache
+C:\Users\Jiynto\source\repos\SalesPersonLab2\SalesPersonLab2\bin\Debug\netcoreapp3.1\ulysses16.csv
