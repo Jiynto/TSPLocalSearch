@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace SalesPersonLab1
+namespace SalesPersonLab2
 {
     public class Route
     {

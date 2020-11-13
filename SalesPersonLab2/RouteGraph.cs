@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 
-namespace SalesPersonLab1
+namespace SalesPersonLab2
 {
     public class RouteGraph
     {
@@ -86,7 +86,7 @@ namespace SalesPersonLab1
         }
 
 
-        public List<Route> GetNeighbourhood(Route inputRoute)
+        public List<Route> GetTwoOptNeighbourhood(Route inputRoute)
         {
             List<Route> Neighbourhood = new List<Route>();
 
